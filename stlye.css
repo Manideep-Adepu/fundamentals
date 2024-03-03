@@ -1,0 +1,219 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.brand {
+    font-size: 28px;
+    color: #333;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: #333;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.navigation-link:hover {
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.ad {
+    background-image: url(https://pc-tablet.com/wp-content/uploads/2023/11/galaxy-s24-ultra-new-leak-1.webp);
+    height: 650px;
+    width: 80%;
+    margin-left: 140px;
+}
+
+.h1 {
+    font-size: 70px;
+    animation: samsung 8s infinite forwards 0ms;
+    line-height: 280px;
+}
+
+@keyframes samsung {
+    50% {
+        color: rgb(49, 70, 7);
+    }
+    100% {
+        color: rgb(254, 254, 254);
+    }
+}
+
+.h2,
+.h3 {
+    color: white;
+    margin-left: 10px;
+    font-size: large;
+}
+
+.body1,
+.img1 {
+    display: grid;
+    grid-template-rows: 48% 48%;
+    grid-template-columns: 49% 49%;
+    height: auto;
+    gap: 20px;
+}
+
+.img1:hover,
+.img2:hover {
+    transform: scale(0.8);
+}
+
+.body1 {
+    background-color: gray;
+}
+
+.bodyimg {
+    width: 70%;
+}
+
+.recommended,
+.img2 {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-social ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .brand {
+        margin-bottom: 10px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navigation-link {
+        margin: 5px 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .ad {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .h1 {
+        font-size: 50px;
+        line-height: 180px;
+    }
+    
+    .h2,
+    .h3 {
+        font-size: 16px;
+    }
+    
+    .body1,
+    .img1 {
+        grid-template-columns: 100%;
+    }
+    
+    .bodyimg {
+        width: 100%;
+    }
+    
+    .recommended,
+    .img2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .recommended img {
+        margin-bottom: 20px;
+    }
+}
